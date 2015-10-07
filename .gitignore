@@ -1,0 +1,37 @@
+# OS X
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+
+# Clang and OCLint
+compile_commands.json
+xcodebuild.log
+
+# CocoaPods
+Pods
+Podfile.lock
+
+#appcode
+.idea
+
+*.xcworkspace
+
+#Code Coverage in Xcode7
+*.gcda
+*.gcno
