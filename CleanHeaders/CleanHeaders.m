@@ -68,10 +68,12 @@
 }
 
 - (NSString *)formatSelection:(NSString *)content {
-  // Let's assume all header files start with an #import, #include, or @import.
+  // Let's assume all header files start with an #import, #include, @import,
+  // import.
   NSString *traditionalImportPrefix = @"#import";
   NSString *frameworkImportPrefix = @"@import";
   NSString *traditionalIncludePrefix = @"#include";
+  NSString *swiftPrefix = @"import";
 
   // Convert the entire source into an array based on new lines.
   // Hence the imports have to be alteast in new line to work.
@@ -95,7 +97,8 @@
 
     BOOL isLineHeader = [cleansedLine hasPrefix:traditionalImportPrefix] ||
                         [cleansedLine hasPrefix:traditionalIncludePrefix] ||
-                        [cleansedLine hasPrefix:frameworkImportPrefix];
+                        [cleansedLine hasPrefix:frameworkImportPrefix] ||
+                        [cleansedLine hasPrefix:swiftPrefix];
 
     // If the line is a header and no header element has been detected so far,
     // mark this as the start of the header segment.
@@ -169,7 +172,7 @@
 
 - (BOOL)shouldFormat:(IDESourceCodeDocument *)document {
   return [[NSSet setWithObjects:@"c", @"h", @"cpp", @"cc", @"cxx", @"hh",
-                                @"hpp", @"ipp", @"m", @"mm", nil]
+                                @"hpp", @"ipp", @"m", @"mm", @"swift", nil]
       containsObject:[[[document fileURL] pathExtension] lowercaseString]];
 }
 
