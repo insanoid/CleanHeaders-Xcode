@@ -1,7 +1,6 @@
 # CleanHeaders
 
-An Xcode plug-in to format your import headers in a systematic manner. It simply removes duplicates, spaces and sorts them alphabetically making it much more easier to read and avoid duplicate imports. Works with `@imports` and `#include` along with `#import`.
-
+An Xcode plug-in to format your import headers in a systematic manner. It simply removes duplicates, spaces and sorts them alphabetically making it much more easier to read and avoid duplicate imports. Works with `@imports`, `#include`, `#import` and `import`.
 
 ![Preview](https://raw.githubusercontent.com/insanoid/CleanHeaders-Xcode/master/diff_image.png)
 
