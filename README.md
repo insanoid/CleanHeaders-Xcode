@@ -6,7 +6,7 @@ An Xcode plug-in to format your import headers in a systematic manner. It simply
 
 ## Installation
 
-Install using [Alcatraz](https://github.com/mneorr/Alcatraz).
+Install using [Alcatraz](https://github.com/alcatraz/Alcatraz).
 
 Alternatively you can also clone this repo, build and run CleanHeaders, restart Xcode.
 
