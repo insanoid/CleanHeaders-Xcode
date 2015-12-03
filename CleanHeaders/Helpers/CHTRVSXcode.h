@@ -123,7 +123,7 @@
 @property (readonly) IDEWorkspace *workspace;
 @end
 
-@interface TRVSXcode : NSObject
+@interface CHTRVSXcode : NSObject
 
 + (IDESourceCodeDocument *)sourceCodeDocument;
 + (NSTextView *)textView;
