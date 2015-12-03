@@ -6,7 +6,7 @@
 //  Copyright © 2015 Karthikeya Udupa K M. All rights reserved.
 //
 
-#import "TRVSXcode.h"
+#import "CHTRVSXcode.h"
 #import "CleanHeaders.h"
 
 @interface CleanHeaders ()
@@ -57,13 +57,13 @@
  *  Actual action to clean the header.
  */
 - (void)cleanHeaderAction {
-  if (![TRVSXcode textViewHasSelection]) {
+  if (![CHTRVSXcode textViewHasSelection]) {
     [self formatRanges:@[
-      [NSValue valueWithRange:[TRVSXcode wholeRangeOfTextView]]
-    ] inDocument:[TRVSXcode sourceCodeDocument]];
+      [NSValue valueWithRange:[CHTRVSXcode wholeRangeOfTextView]]
+    ] inDocument:[CHTRVSXcode sourceCodeDocument]];
   } else {
-    [self formatRanges:[[TRVSXcode textView] selectedRanges]
-            inDocument:[TRVSXcode sourceCodeDocument]];
+    [self formatRanges:[[CHTRVSXcode textView] selectedRanges]
+            inDocument:[CHTRVSXcode sourceCodeDocument]];
   }
 }
 

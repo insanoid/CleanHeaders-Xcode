@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		931BFD741BC48F22007C3D5A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931BFD731BC48F22007C3D5A /* AppKit.framework */; settings = {ASSET_TAGS = (); }; };
-		931BFD761BC48F22007C3D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931BFD751BC48F22007C3D5A /* Foundation.framework */; settings = {ASSET_TAGS = (); }; };
+		931BFD741BC48F22007C3D5A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931BFD731BC48F22007C3D5A /* AppKit.framework */; };
+		931BFD761BC48F22007C3D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931BFD751BC48F22007C3D5A /* Foundation.framework */; };
 		931BFD7A1BC48F22007C3D5A /* CleanHeaders.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 931BFD791BC48F22007C3D5A /* CleanHeaders.xcscheme */; };
 		931BFD7D1BC48F22007C3D5A /* CleanHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 931BFD7C1BC48F22007C3D5A /* CleanHeaders.m */; };
 		931BFD801BC48F22007C3D5A /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 931BFD7F1BC48F22007C3D5A /* NSObject_Extension.m */; };
-		9351B9151BC495E400421C88 /* TRVSXcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351B9141BC495E400421C88 /* TRVSXcode.m */; settings = {ASSET_TAGS = (); }; };
+		9351B9151BC495E400421C88 /* CHTRVSXcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9351B9141BC495E400421C88 /* CHTRVSXcode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +25,8 @@
 		931BFD7E1BC48F22007C3D5A /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		931BFD7F1BC48F22007C3D5A /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		931BFD811BC48F22007C3D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9351B9131BC495E400421C88 /* TRVSXcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSXcode.h; sourceTree = "<group>"; };
-		9351B9141BC495E400421C88 /* TRVSXcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSXcode.m; sourceTree = "<group>"; };
+		9351B9131BC495E400421C88 /* CHTRVSXcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTRVSXcode.h; sourceTree = "<group>"; };
+		9351B9141BC495E400421C88 /* CHTRVSXcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTRVSXcode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 		931BFD871BC48F83007C3D5A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				9351B9131BC495E400421C88 /* TRVSXcode.h */,
-				9351B9141BC495E400421C88 /* TRVSXcode.m */,
+				9351B9131BC495E400421C88 /* CHTRVSXcode.h */,
+				9351B9141BC495E400421C88 /* CHTRVSXcode.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9351B9151BC495E400421C88 /* TRVSXcode.m in Sources */,
+				9351B9151BC495E400421C88 /* CHTRVSXcode.m in Sources */,
 				931BFD7D1BC48F22007C3D5A /* CleanHeaders.m in Sources */,
 				931BFD801BC48F22007C3D5A /* NSObject_Extension.m in Sources */,
 			);

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Travis Jeffery. All rights reserved.
 //
 
-#import "TRVSXcode.h"
+#import "CHTRVSXcode.h"
 
-@implementation TRVSXcode
+@implementation CHTRVSXcode
 
 + (id)currentEditor {
   if ([[self windowController]
