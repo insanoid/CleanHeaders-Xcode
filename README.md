@@ -1,28 +1,25 @@
 # CleanHeaders
 
-## WARNING
-
-## This project does not work with Xcode 8 since Alcatraz does not work anymore, I am converting it into a Xcode 8 Extension soon.
-
 An Xcode plug-in to format your import headers in a systematic manner. It simply removes duplicates, spaces and sorts them alphabetically making it much more easier to read and avoid duplicate imports. Works with `@imports`, `#include`, `#import` and `import`.
 
 ![Preview](https://raw.githubusercontent.com/insanoid/CleanHeaders-Xcode/master/diff_image.png)
 
-## Installation
-
-Install using [Alcatraz](https://github.com/alcatraz/Alcatraz).
-
-Alternatively you can also clone this repo, build and run CleanHeaders, restart Xcode.
-
 ## Usage
 
-Press `command+|` to format the headers for the currently open file. You can also select a certain segment of the file and do the same.
+![Usage](menu_options.png)
+
+Select the option from `Editor > Clean Headers > Sort Headers`. You can add shortcuts from Xcode preferences.
 
 ## TODO/Limitations
 
-- Works with includes kept together at the top of the file only.
-- If there is a platform specific include such as `#if TARGET_OS_WATCH` the headers would have to be sorted seperately.
-- Auto save option not available yet.
 - Missing tests
 
-I am using some helper functions to deal with the IDE from [ClangFormat-Xcode](https://github.com/travisjeffery/ClangFormat-Xcode), thanks for the awesome class.
+## Support for Alcatraz (Deprecated)
+
+Install the older version[v1.0.0](https://github.com/insanoid/CleanHeaders-Xcode/releases/tag/v1.0.0).
+
+Alternatively you can also clone the release, build and run CleanHeaders, restart Xcode.
+
+## Credits
+
+I am using some helper functions to deal with the filtering out source text from[xTextHandler-objc](https://github.com/cyanzhong/xTextHandler-objc), thanks for the awesome class.), thanks for the awesome class.), thanks for the awesome class.

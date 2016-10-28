@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		935A24851DC3D0D600EACC26 /* xTextMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 935A24821DC3D0D600EACC26 /* xTextMatcher.m */; };
+		935A24861DC3D0D600EACC26 /* xTextModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 935A24841DC3D0D600EACC26 /* xTextModifier.m */; };
+		9384828E1DC38D1900559062 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9384828D1DC38D1900559062 /* AppDelegate.m */; };
+		938482911DC38D1900559062 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 938482901DC38D1900559062 /* main.m */; };
+		938482931DC38D1900559062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938482921DC38D1900559062 /* Assets.xcassets */; };
+		938482961DC38D1900559062 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938482941DC38D1900559062 /* MainMenu.xib */; };
+		938482A41DC38D3200559062 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938482A31DC38D3200559062 /* Cocoa.framework */; };
+		938482AA1DC38D3200559062 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 938482A91DC38D3200559062 /* SourceEditorExtension.m */; };
+		938482AD1DC38D3200559062 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 938482AC1DC38D3200559062 /* SourceEditorCommand.m */; };
+		938482B11DC38D3200559062 /* Clean Headers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 938482A11DC38D3200559062 /* Clean Headers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		938482AF1DC38D3200559062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938482811DC38D1900559062 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 938482A01DC38D3200559062;
+			remoteInfo = "CleanHeaders-Xcode-Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		938482B51DC38D3200559062 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				938482B11DC38D3200559062 /* Clean Headers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		935A24811DC3D0D600EACC26 /* xTextMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xTextMatcher.h; sourceTree = "<group>"; };
+		935A24821DC3D0D600EACC26 /* xTextMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xTextMatcher.m; sourceTree = "<group>"; };
+		935A24831DC3D0D600EACC26 /* xTextModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xTextModifier.h; sourceTree = "<group>"; };
+		935A24841DC3D0D600EACC26 /* xTextModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xTextModifier.m; sourceTree = "<group>"; };
+		938482891DC38D1900559062 /* CleanHeaders-Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CleanHeaders-Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9384828C1DC38D1900559062 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9384828D1DC38D1900559062 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		938482901DC38D1900559062 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		938482921DC38D1900559062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		938482951DC38D1900559062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		938482971DC38D1900559062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938482A11DC38D3200559062 /* Clean Headers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Clean Headers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		938482A31DC38D3200559062 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		938482A71DC38D3200559062 /* CleanHeaders_Xcode_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanHeaders_Xcode_Extension.entitlements; sourceTree = "<group>"; };
+		938482A81DC38D3200559062 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		938482A91DC38D3200559062 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		938482AB1DC38D3200559062 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		938482AC1DC38D3200559062 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		938482AE1DC38D3200559062 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938482B61DC390F900559062 /* SortHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		938482861DC38D1900559062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9384829E1DC38D3200559062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938482A41DC38D3200559062 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		938482801DC38D1900559062 = {
+			isa = PBXGroup;
+			children = (
+				9384828B1DC38D1900559062 /* CleanHeaders-Xcode */,
+				938482A51DC38D3200559062 /* CleanHeaders-Xcode-Extension */,
+				938482A21DC38D3200559062 /* Frameworks */,
+				9384828A1DC38D1900559062 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9384828A1DC38D1900559062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				938482891DC38D1900559062 /* CleanHeaders-Xcode.app */,
+				938482A11DC38D3200559062 /* Clean Headers.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9384828B1DC38D1900559062 /* CleanHeaders-Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				9384828C1DC38D1900559062 /* AppDelegate.h */,
+				9384828D1DC38D1900559062 /* AppDelegate.m */,
+				938482921DC38D1900559062 /* Assets.xcassets */,
+				938482941DC38D1900559062 /* MainMenu.xib */,
+				938482971DC38D1900559062 /* Info.plist */,
+				9384828F1DC38D1900559062 /* Supporting Files */,
+			);
+			path = "CleanHeaders-Xcode";
+			sourceTree = "<group>";
+		};
+		9384828F1DC38D1900559062 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				938482901DC38D1900559062 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		938482A21DC38D3200559062 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				938482A31DC38D3200559062 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		938482A51DC38D3200559062 /* CleanHeaders-Xcode-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				935A24811DC3D0D600EACC26 /* xTextMatcher.h */,
+				935A24821DC3D0D600EACC26 /* xTextMatcher.m */,
+				935A24831DC3D0D600EACC26 /* xTextModifier.h */,
+				935A24841DC3D0D600EACC26 /* xTextModifier.m */,
+				938482B61DC390F900559062 /* SortHeader.h */,
+				938482A81DC38D3200559062 /* SourceEditorExtension.h */,
+				938482A91DC38D3200559062 /* SourceEditorExtension.m */,
+				938482AB1DC38D3200559062 /* SourceEditorCommand.h */,
+				938482AC1DC38D3200559062 /* SourceEditorCommand.m */,
+				938482AE1DC38D3200559062 /* Info.plist */,
+				938482A61DC38D3200559062 /* Supporting Files */,
+			);
+			path = "CleanHeaders-Xcode-Extension";
+			sourceTree = "<group>";
+		};
+		938482A61DC38D3200559062 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				938482A71DC38D3200559062 /* CleanHeaders_Xcode_Extension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		938482881DC38D1900559062 /* CleanHeaders-Xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9384829A1DC38D1900559062 /* Build configuration list for PBXNativeTarget "CleanHeaders-Xcode" */;
+			buildPhases = (
+				938482851DC38D1900559062 /* Sources */,
+				938482861DC38D1900559062 /* Frameworks */,
+				938482871DC38D1900559062 /* Resources */,
+				938482B51DC38D3200559062 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938482B01DC38D3200559062 /* PBXTargetDependency */,
+			);
+			name = "CleanHeaders-Xcode";
+			productName = "CleanHeaders-Xcode";
+			productReference = 938482891DC38D1900559062 /* CleanHeaders-Xcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		938482A01DC38D3200559062 /* CleanHeaders-Xcode-Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938482B21DC38D3200559062 /* Build configuration list for PBXNativeTarget "CleanHeaders-Xcode-Extension" */;
+			buildPhases = (
+				9384829D1DC38D3200559062 /* Sources */,
+				9384829E1DC38D3200559062 /* Frameworks */,
+				9384829F1DC38D3200559062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CleanHeaders-Xcode-Extension";
+			productName = "CleanHeaders-Xcode-Extension";
+			productReference = 938482A11DC38D3200559062 /* Clean Headers.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		938482811DC38D1900559062 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Karthik;
+				TargetAttributes = {
+					938482881DC38D1900559062 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UYGU8PDBPS;
+						ProvisioningStyle = Automatic;
+					};
+					938482A01DC38D3200559062 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UYGU8PDBPS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 938482841DC38D1900559062 /* Build configuration list for PBXProject "CleanHeaders-Xcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 938482801DC38D1900559062;
+			productRefGroup = 9384828A1DC38D1900559062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				938482881DC38D1900559062 /* CleanHeaders-Xcode */,
+				938482A01DC38D3200559062 /* CleanHeaders-Xcode-Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		938482871DC38D1900559062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938482931DC38D1900559062 /* Assets.xcassets in Resources */,
+				938482961DC38D1900559062 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9384829F1DC38D3200559062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		938482851DC38D1900559062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938482911DC38D1900559062 /* main.m in Sources */,
+				9384828E1DC38D1900559062 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9384829D1DC38D3200559062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935A24851DC3D0D600EACC26 /* xTextMatcher.m in Sources */,
+				938482AA1DC38D3200559062 /* SourceEditorExtension.m in Sources */,
+				935A24861DC3D0D600EACC26 /* xTextModifier.m in Sources */,
+				938482AD1DC38D3200559062 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		938482B01DC38D3200559062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 938482A01DC38D3200559062 /* CleanHeaders-Xcode-Extension */;
+			targetProxy = 938482AF1DC38D3200559062 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		938482941DC38D1900559062 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				938482951DC38D1900559062 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		938482981DC38D1900559062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		938482991DC38D1900559062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9384829B1DC38D1900559062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UYGU8PDBPS;
+				INFOPLIST_FILE = "CleanHeaders-Xcode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthik.CleanHeaders-Xcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9384829C1DC38D1900559062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UYGU8PDBPS;
+				INFOPLIST_FILE = "CleanHeaders-Xcode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthik.CleanHeaders-Xcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		938482B31DC38D3200559062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CleanHeaders-Xcode-Extension/CleanHeaders_Xcode_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UYGU8PDBPS;
+				INFOPLIST_FILE = "CleanHeaders-Xcode-Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthik.CleanHeaders-Xcode.CleanHeaders-Xcode-Extension";
+				PRODUCT_NAME = "Clean Headers";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		938482B41DC38D3200559062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CleanHeaders-Xcode-Extension/CleanHeaders_Xcode_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UYGU8PDBPS;
+				INFOPLIST_FILE = "CleanHeaders-Xcode-Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karthik.CleanHeaders-Xcode.CleanHeaders-Xcode-Extension";
+				PRODUCT_NAME = "Clean Headers";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		938482841DC38D1900559062 /* Build configuration list for PBXProject "CleanHeaders-Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938482981DC38D1900559062 /* Debug */,
+				938482991DC38D1900559062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9384829A1DC38D1900559062 /* Build configuration list for PBXNativeTarget "CleanHeaders-Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9384829B1DC38D1900559062 /* Debug */,
+				9384829C1DC38D1900559062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938482B21DC38D3200559062 /* Build configuration list for PBXNativeTarget "CleanHeaders-Xcode-Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938482B31DC38D3200559062 /* Debug */,
+				938482B41DC38D3200559062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 938482811DC38D1900559062 /* Project object */;
+}
