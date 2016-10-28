@@ -10,6 +10,8 @@ An Xcode plug-in to format your import headers in a systematic manner. It simply
 
 Select the option from `Editor > Clean Headers > Sort Headers`. You can add shortcuts from Xcode preferences.
 
+Please run sudo /usr/libexec/xpccachectl and restart your Mac before running the extension if you are on macOS 10.11 El Capitan.
+
 ## TODO/Limitations
 
 - Missing tests
