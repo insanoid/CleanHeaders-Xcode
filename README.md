@@ -16,10 +16,10 @@ Select the option from `Editor > Clean Headers > Sort Headers`. You can add shor
 
 ## Support for Alcatraz (Deprecated)
 
-Install the older version[v1.0.0](https://github.com/insanoid/CleanHeaders-Xcode/releases/tag/v1.0.0).
+Install the older version [v1.0.0](https://github.com/insanoid/CleanHeaders-Xcode/releases/tag/v1.0.0).
 
 Alternatively you can also clone the release, build and run CleanHeaders, restart Xcode.
 
 ## Credits
 
-I am using some helper functions to deal with the filtering out source text from[xTextHandler-objc](https://github.com/cyanzhong/xTextHandler-objc), thanks for the awesome class.), thanks for the awesome class.), thanks for the awesome class.
+I am using some helper functions to deal with the filtering out source text from[xTextHandler-objc](https://github.com/cyanzhong/xTextHandler-objc), thanks for the awesome class.
